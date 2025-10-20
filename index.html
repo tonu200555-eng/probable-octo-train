@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>VW Cinematic Intro — GSAP Replica</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <!-- GSAP core + extras -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/TextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/CustomEase.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrambleTextPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.1.10/bundled/lenis.min.js"></script>
+</head>
+<body>
+  <header class="hero">
+    <div class="bg" data-scroll-speed="0.2" style="background-image:url('assets/bg-layer1.jpg')"></div>
+    <div class="bg" data-scroll-speed="0.5" style="background-image:url('assets/bg-layer2.png')"></div>
+
+    <div class="hero-wrap" herowrap>
+      <h1 class="title">
+        <span hero-char>THE</span>
+        <span hero-char2>FUTURE</span>
+        <span hero-num>MOVES</span>
+      </h1>
+      <p heroabout class="scramble-line"></p>
+      <p heroabout2 class="scramble-line"></p>
+    </div>
+
+    <div id="reveal" class="reveal">
+      <video id="revealVid" muted playsinline preload="auto">
+        <source src="assets/intro.mp4" type="video/mp4"/>
+      </video>
+    </div>
+  </header>
+
+  <main>
+    <section class="content">
+      <h2>Next Section</h2>
+      <p>Placeholder for later content.</p>
+      <div style="height:1200px"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
